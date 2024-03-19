@@ -70,7 +70,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://github.com/mdo.png" alt="" width="32" height="32"
                                     class="rounded-circle me-2">
-                                    Lorenzo Andreotti
+                                Lorenzo Andreotti
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-dark text-small shadow w-75">
@@ -98,74 +98,279 @@
     <!-- MAIN -->
     <main>
 
-        <!-- NAVBAR MD/LG -->
-        <div class="container-flex bg-dark mh-100 w-25">
+        <div class="container-flex d-md-flex">
 
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-flex">
+            <!-- NAVBAR MD/LG -->
+            <div class="container-flex bg-dark mh-100 w-25">
 
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-5">Bootstrap Dashboard</span>
-                </a>
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-flex">
 
-                <hr>
-
-                <ul class="nav nav-pills flex-column mb-auto">
-
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="fa-solid fa-house pe-2"></i>Dashboard
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./sponsorizations.html" class="nav-link text-white">
-                            <i class="fa-solid fa-chart-line pe-2"></i>Sponsorizzazione
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./products.html" class="nav-link text-white">
-                            <i class="fa-solid fa-box-archive pe-2"></i>Prodotti
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./form.html" class="text-white btn btn-primary w-100 text-start">
-                            <i class="fa-solid fa-plus pe-2"></i>Nuovo Prodotto
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <i class="fa-solid fa-user pe-2"></i>Clienti
-                        </a>
-                    </li>
-
-                </ul>
-
-                <div class="dropdown pt-5">
-
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>Lorenzo Andreotti</strong>
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5">Bootstrap Dashboard</span>
                     </a>
 
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow w-75">
+                    <hr>
 
-                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                        <li><a class="dropdown-item" href="#">Profilo</a></li>
-                        <hr>
-                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                    <ul class="nav nav-pills flex-column mb-auto">
+
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-house pe-2"></i>Dashboard
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./sponsorizations.html" class="nav-link text-white">
+                                <i class="fa-solid fa-chart-line pe-2"></i>Sponsorizzazione
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./products.html" class="nav-link text-white">
+                                <i class="fa-solid fa-box-archive pe-2"></i>Prodotti
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./form.html" class="text-white btn btn-primary w-100 text-start">
+                                <i class="fa-solid fa-plus pe-2"></i>Nuovo Prodotto
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <i class="fa-solid fa-user pe-2"></i>Clienti
+                            </a>
+                        </li>
 
                     </ul>
+
+                    <div class="dropdown pt-5">
+
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                class="rounded-circle me-2">
+                            <strong>Lorenzo Andreotti</strong>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow w-75">
+
+                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="#">Esci</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /NAVBAR MD/LG -->
+
+            <!-- NEW PRODUCTS -->
+
+            <div class="container-flex d-flex flex-column align-items-center justify-content-center w-100">
+
+                <!-- HEADER PRODUCTS -->
+                <div class="col d-flex flex-column w-75 align-items-center p-5 text-center">
+
+                    <!-- TITLE -->
+                    <h1>Crea nuovo prodotto</h1>
+
+                    <!-- TEXT -->
+                    <div class="fs-5">I campi contrassegnati con un asterisco (*) sono obbligatori.</div>
+
+                    <div class="fs-5">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
+                        dimensione.</div>
+
+                </div>
+
+                <!-- FORM PRODUCTS -->
+
+                <div class="d-flex flex-column w-75 py-3">
+
+                    <form action="">
+
+                        <div class="col">
+
+                            <!-- NAME -->
+                            <div class="mb-4 d-md-flex align-items-center">
+                                <label for="name" class="form-label px-md-3">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Samsung Galaxy 10 Plus" required>
+                            </div>
+
+                            <!-- PRICE -->
+                            <div class="mb-4 d-md-flex align-items-center">
+                                <label for="price" class="form-label px-md-3">Prezzo</label>
+                                <input type="text" class="form-control" id="price" placeholder="99.00" required>
+                            </div>
+
+                            <!-- SELECT -->
+                            <div class="d-md-flex align-items-center">
+                                <label for="mark" class="form-label px-md-3">Marca</label>
+
+                                <select class="form-select" id="mark">
+                                    <option selected>---Seleziona---</option>
+                                    <option value="1">Samsung</option>
+                                    <option value="2">Apple</option>
+                                    <option value="3">Gucci</option>
+                                    <option value="4">Prada</option>
+                                    <option value="5">Zio franchino</option>
+                                </select>
+                            </div>
+
+                           
+
+                            <!-- TEXT AREA -->
+                            <div class="mb-3">
+                                <label for="text-area" class="form-label"></label>
+                                <textarea class="form-control" id="text-area" rows="6"
+                                    placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
+                            </div>
+
+                            <!-- FILE IMPUT -->
+                            <div class="mb-3 d-flex align-items-center">
+                                <label for="formFile" class="form-label"></label>
+                                <input class="form-control" type="file" id="formFile" required>
+                            </div>
+
+                            <!-- FILTER -->
+                            <div class="btn-group mb-4" role="group">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btncheck1">Disponibile</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btncheck2">Esaurito</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btncheck3">Fuori produzione</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btncheck4">In arrivo</label>
+                            </div>
+
+                        </div> 
+
+                        <!-- TABLE -->
+                        <div class="col">
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-bottom-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>fotocamera principale</b></div>
+
+                                    <div>foto di alta qualità e registrare video nitidi.</div>
+                                </div>
+
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>schermo OLED</b></div>
+
+                                    <div>offre colori vividi per un esperienza visiva straordinaria.</div>
+                                </div>
+
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>Processore Octa-core</b></div>
+
+                                    <div>prestazioni fluide e veloci per eseguire le applicazioni più esigenti</div>
+                                </div>
+
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>ricarica wireless</b></div>
+
+                                    <div>consente di ricaricare lo smartphone comodamente senza l'uso di cavi</div>
+                                </div>
+
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>connessione 5G</b></div>
+
+                                    <div>navigazione ultra veloce e streaming senza interruzioni</div>
+                                </div>
+
+                            </div>
+
+                            <!-- CARD -->
+                            <div class="card row d-flex flex-row py-2 rounded-top-0">
+
+                                <div class="col-1 py-1">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+
+                                <div class="col-11 p-0">
+
+                                    <!-- TITLE -->
+                                    <div class="fs-5"><b>tecnologia NFC</b></div>
+
+                                    <div>per effettuare pagamenti senza contatto</div>
+                                </div>
+
+                            </div>
+
+                            <input type="submit" class="btn btn-primary row" value="Salva">
+
+                        </div>
+                    </form>
+
 
                 </div>
 
             </div>
 
         </div>
-        <!-- /NAVBAR MD/LG -->
 
     </main>
 
